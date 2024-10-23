@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-23T16:57:07Z" name="Test Suite for Buildout" finished-at="2024-10-23T16:58:47Z" duration-ms="100201">
+    <groups>
+    </groups>
+    <test started-at="2024-10-23T16:57:07Z" name="Test Cases for Buildout" finished-at="2024-10-23T16:58:47Z" duration-ms="100201">
+      <class name="demo.TestCases">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:demo.TestCases@64b73e7a]" started-at="2024-10-23T22:27:07Z" name="startBrowser" finished-at="2024-10-23T22:27:09Z" duration-ms="1984" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method is-config="true" signature="goToYT()[pri:0, instance:demo.TestCases@64b73e7a]" started-at="2024-10-23T22:27:09Z" name="goToYT" finished-at="2024-10-23T22:27:15Z" duration-ms="6567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToYT -->
+        <test-method signature="testCase01()[pri:0, instance:demo.TestCases@64b73e7a]" started-at="2024-10-23T22:27:15Z" name="testCase01" finished-at="2024-10-23T22:27:19Z" duration-ms="3566" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase01 -->
+        <test-method is-config="true" signature="goToYT()[pri:0, instance:demo.TestCases@64b73e7a]" started-at="2024-10-23T22:27:19Z" name="goToYT" finished-at="2024-10-23T22:27:23Z" duration-ms="3865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToYT -->
+        <test-method signature="testCase02()[pri:0, instance:demo.TestCases@64b73e7a]" started-at="2024-10-23T22:27:23Z" name="testCase02" finished-at="2024-10-23T22:27:51Z" duration-ms="28047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase02 -->
+        <test-method is-config="true" signature="goToYT()[pri:0, instance:demo.TestCases@64b73e7a]" started-at="2024-10-23T22:27:51Z" name="goToYT" finished-at="2024-10-23T22:27:56Z" duration-ms="5562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToYT -->
+        <test-method signature="testCase03()[pri:0, instance:demo.TestCases@64b73e7a]" started-at="2024-10-23T22:27:56Z" name="testCase03" finished-at="2024-10-23T22:28:22Z" duration-ms="26219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase03 -->
+        <test-method is-config="true" signature="goToYT()[pri:0, instance:demo.TestCases@64b73e7a]" started-at="2024-10-23T22:28:22Z" name="goToYT" finished-at="2024-10-23T22:28:27Z" duration-ms="4973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToYT -->
+        <test-method signature="testCase04()[pri:0, instance:demo.TestCases@64b73e7a]" started-at="2024-10-23T22:28:27Z" name="testCase04" finished-at="2024-10-23T22:28:46Z" duration-ms="18810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase04 -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:demo.TestCases@64b73e7a]" started-at="2024-10-23T22:28:46Z" name="endTest" finished-at="2024-10-23T22:28:47Z" duration-ms="593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- demo.TestCases -->
+    </test> <!-- Test Cases for Buildout -->
+  </suite> <!-- Test Suite for Buildout -->
+</testng-results>
