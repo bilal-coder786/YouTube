@@ -21,6 +21,7 @@ import org.testng.annotations.Test;
 
 import demo.utils.ExcelDataProvider;
 import demo.wrappers.Wrappers;
+//import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestCases extends ExcelDataProvider { // Lets us read the data
 
@@ -151,10 +152,12 @@ public class TestCases extends ExcelDataProvider { // Lets us read the data
             // Wait for the next item to load properly
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='rich-shelf-header-container']")));
         }
-
+        
+    
         // End the test case and print final sum of votes
         System.out.println("End test Case 04 with total votes: " + sumOfVotes);
     }
+    
 
     @Test(dataProvider = "excelData")
     public void testCase05(String searchWord) throws InterruptedException {

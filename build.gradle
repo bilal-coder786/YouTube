@@ -24,6 +24,10 @@ dependencies {
     // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
     implementation 'org.seleniumhq.selenium:selenium-java:4.21.0'
     implementation 'org.apache.poi:poi-ooxml:4.1.2'
+    // https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
+    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.5.1'
+    //  testImplementation("io.github.bonigarcia:webdrivermanager:5.9.2")
+
 
 }
 
