@@ -1,0 +1,17 @@
+{
+    "Comment Check.You used 49 comments, should be between 3 < No limit": "TEST_STATUS_SUCCESS",
+    "WebDriverWait Check.You used 3 waits, should be between 1 < No limit": "TEST_STATUS_SUCCESS",
+    "Sleep statement Check.You used 4 sleep statements, should be between No limit < 20": "TEST_STATUS_SUCCESS",
+    "System Out Printline or Logging Check.You used 37 System out Printline statements, should be between 3 < No limit": "TEST_STATUS_SUCCESS",
+    "Test Case 1 - Travel to YouTube and check About page.Navigated to the YouTube": "TEST_STATUS_SUCCESS",
+    "Test Case 1 - Travel to YouTube and check About page.Printed the About text": "TEST_STATUS_SUCCESS",
+    "Test Case 2 - Check the Film/Movies tab.Clicked on the Films/Movies tab": "TEST_STATUS_SUCCESS",
+    "Test Case 2 - Check the Film/Movies tab.Clicked on the arrow to move the cards": "TEST_STATUS_SUCCESS",
+    "Test Case 2 - Check the Film/Movies tab.Found the element to be compared: catogory and target audience": "TEST_STATUS_SUCCESS",
+    "Test Case 3 - Check the Music tab.Clicked on the Music tab": "TEST_STATUS_SUCCESS",
+    "Test Case 3 - Check the Music tab.Clicked on the arrow to move the cards": "TEST_STATUS_SUCCESS",
+    "Test Case 3 - Check the Music tab.Found the element to be compared: tracks on the playlist": "TEST_STATUS_SUCCESS",
+    "Test Case 4 - Check the News tab.Clicked on the News tab": "TEST_STATUS_SUCCESS",
+    "Test Case 4 - Check the News tab.Found the element to be add up: number of likes on a post": "TEST_STATUS_SUCCESS",
+    "Test Case 5 - Search Keywords.TestNG Test Method 'testCase05' is not Implemented": "TEST_STATUS_FAILURE"
+}
