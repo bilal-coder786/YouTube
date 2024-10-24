@@ -4,6 +4,7 @@ import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TimeoutException;
@@ -157,11 +158,27 @@ public class Wrappers {
         softAssert.assertAll();
     }
 
+    // public static String findElementAndPrintWE(WebDriver driver, By locator, WebElement we, int elementNo) {
+    //     WebElement element = we.findElements(locator).get(elementNo);
+    //     String txt = element.getText();
+    //     return txt;
+    // }
     public static String findElementAndPrintWE(WebDriver driver, By locator, WebElement we, int elementNo) {
-        WebElement element = we.findElements(locator).get(elementNo);
-        String txt = element.getText();
-        return txt;
+        // Find element within the parent WebElement
+        List<WebElement> elements = we.findElements(locator);
+        
+        // Prevent out-of-bound exception
+        if (elementNo < elements.size()) {
+            WebElement element = elements.get(elementNo);
+            String txt = element.getText();
+            System.out.println("Fetched Text: " + txt);
+            return txt;
+        } else {
+            System.out.println("Element not found for index: " + elementNo);
+            return "";
+        }
     }
+    
 
     public static long convertToNumericValue(String value) {
         // Trim the string to remove any leading or trailing spaces
@@ -193,4 +210,25 @@ public class Wrappers {
         return (long) (number * multiplier);
     }
 
+    public static void sendKeysWrapper(WebDriver driver, By locator, String textToSend) {
+        System.out.println("Sending Keys");
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+            WebElement textInput = driver.findElement(locator);
+            textInput.clear();
+            textInput.sendKeys(textToSend);
+            textInput.sendKeys(Keys.ENTER);
+        } catch (Exception e) {
+            System.out.println("Exception Occured!" + e.getMessage());
+        }
+    }
+
+    public static String findElementAndPrint(WebDriver driver, By locator, int elementNo) {
+        WebElement we = driver.findElements(locator).get(elementNo);
+        // Return the result
+        String txt = we.getText();
+        System.out.println("Output from HTML Page is : " + txt);
+        return txt;
+    }
 }
